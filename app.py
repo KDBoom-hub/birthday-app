@@ -2,7 +2,7 @@ import datetime
 import time
 import streamlit as st
 
-# 2. Add Pastel Pink Background CSS
+#
 st.markdown(
     """
     <style>
@@ -58,19 +58,19 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-# set browser tap config
+# 
 st.set_page_config(
     page_title="Birthday Countdown !",
     page_icon="🎊", 
   layout="centered"
 ) 
 
-# page header
+# 
 st.title("Birthday Countdown !")
 st.caption("Enter your birthdate below to see how many days until your birthday!~")
 st.divider()
 
-# asks for user input
+# 
 with st.container(border=True):
     st.subheader("🎂 Enter your details in")
 
