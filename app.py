@@ -53,8 +53,40 @@ if st.button("Calculate Days Left 🍾", use_container_width=True):
 
     if days_left == 0:
         st.balloons()
-        st.snow()
-        st.success(f"Happy Birthday, {name}! Today is your special day! ❤️")
+        st.markdown(
+            f"""
+            <div style="
+                background-color: #d4edda;
+                color: #155724;
+                border: 2px solid #c3e6cb;
+                padding: 20px;
+                border-radius: 15px;
+                text-align: center;
+                font-size: 26px;
+                font-weight: bold;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            ">
+                Happy Birthday, {name}! Today is your special day! 💕🎉
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
     else:
-        st.info(f"Hiya, **{name}** there are **{days_left} days** until your birthday!")
+        st.markdown(
+            f"""
+            <div style="
+                background-color: #e2f0d9;
+                color: #2e6b27;
+                border: 2px solid #b7e1cd;
+                padding: 20px;
+                border-radius: 15px;
+                text-align: center;
+                font-size: 22px;
+                font-weight: bold;
+            ">
+                Hiya {name}, there are <span style="font-size: 30px; color: #1e4620;">{days_left}</span> days until your next birthday! 🎈
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
