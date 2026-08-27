@@ -42,7 +42,7 @@ st.caption("Enter your birthdate below to see how many days until your birthday!
 st.divider()
 
 # asks for user input
-with st.contatiner(border=True):
+with st.container(border=True):
     st.subheader("🎂 Enter your details in")
 
 name = st.text_input("Enter your name:", "Friend")
