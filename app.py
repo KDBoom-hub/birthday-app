@@ -52,7 +52,9 @@ if st.button("Calculate Days Left 🍾", use_container_width=True):
     days_left = (next_bday - today).days
 
     if days_left == 0:
-        st.balloons()
+        for _ in range(3):
+            st.balloons()
+            time.sleep(0.3)
         st.markdown(
             f"""
             <div style="
