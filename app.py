@@ -90,12 +90,22 @@ bday_date  = st.date_input(
 if st.button("Calculate Days Left 🍾", use_container_width=True):
     today = datetime.date.today()
 
-    next_bday = datetime.date(today.year, bday_date.month, bday_date.day)
+    try:
+        next_bday = datetime.date(today.year, bday_date.month, bday_date.day)
+    except ValueError:
+        next_bday = datetime.date(today.year, 3, 1)
+    
+    if next_bday < today:
+        try:
+            next_bday = datetime.date(today.year + 1, bday_date.month, bday_date.day)
+        except ValueError:
+            next_bday = datetime.date(today.year, 3, 1)
 
     if next_bday < today:
-        next_bday = datetime.date(today.year + 1, bday_date.month, bday_date.day)
-
-    days_left = (next_bday - today).days
+        try:
+            next_bday = daytime.date(today.year + 1, bday_date.month, bday_date.day)
+        except ValueError:
+            next_bday = (datetime.date(today.year + 1, 3, 1))
 
     if days_left == 0:
         for _ in range(3):
