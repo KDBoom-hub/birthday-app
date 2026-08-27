@@ -32,7 +32,7 @@ st.markdown(
 # set browser tap config
 st.set_page_config(
     page_title="Birthday Countdown !"
-    page_icon=🎊 
+    page_icon="🎊" 
 )   layout="centered"
 
 # page header
