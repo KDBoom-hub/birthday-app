@@ -107,6 +107,7 @@ if st.button("Calculate Days Left 🍾", use_container_width=True):
         except ValueError:
             next_bday = (datetime.date(today.year + 1, 3, 1))
 
+    days_left = (next_bday - today).days
     if days_left == 0:
         for _ in range(3):
             st.balloons()
