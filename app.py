@@ -103,7 +103,7 @@ if st.button("Calculate Days Left 🍾", use_container_width=True):
 
     if next_bday < today:
         try:
-            next_bday = daytime.date(today.year + 1, bday_date.month, bday_date.day)
+            next_bday = datetime.date(today.year + 1, bday_date.month, bday_date.day)
         except ValueError:
             next_bday = (datetime.date(today.year + 1, 3, 1))
 
