@@ -1,27 +1,13 @@
 import datetime
 import streamlit as st
 
+# 2. Add Pastel Pink Background CSS
 st.markdown(
     """
     <style>
-    /* Pastel Pink Gradient Background */
     .stApp {
-        background: linear-gradient(135deg, #ffdde1 0%, #ee9ca7 100%);
+        background: linear-gradient(135deg, #ffdde1 0%, #ee9ca7 100%) !important;
         color: #4a4a4a;
-    }
-
-    /* Styling input containers with soft white glassmorphism */
-    div[data-testid="stForm"], div[data-testid="stVerticalBlock"] > div[style*="border"] {
-        background-color: rgba(255, 255, 255, 0.45);
-        backdrop-filter: blur(10px);
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.6);
-        padding: 20px;
-    }
-
-    /* Style titles */
-    h1 {
-        color: #d63384;
     }
     </style>
     """,
@@ -33,8 +19,8 @@ st.markdown(
 st.set_page_config(
     page_title="Birthday Countdown !",
     page_icon="🎊", 
-    layout="centered"
-)
+  layout="centered"
+) 
 
 # page header
 st.title("Birthday Countdown !")
@@ -67,7 +53,8 @@ if st.button("Calculate Days Left 🍾", use_container_width=True):
 
     if days_left == 0:
         st.balloons()
-        st.snow
+        st.snow()
         st.success(f"Happy Birthday, {name}! Today is your special day! ❤️")
     else:
         st.info(f"Hiya, **{name}** there are **{days_left} days** until your birthday!")
+
