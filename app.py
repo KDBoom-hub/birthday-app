@@ -20,8 +20,9 @@ st.markdown(
     /* Container with Solid White Background and Black Border */
     div[data-testid="stVerticalBlock"] > div[style*="border"] {
         background-color: #111111 !important;
+        color: #2c3e50 !important;
         border-radius: 20px !important;
-        border: 3px solid #ffffff !important;
+        border: 3px solid #e0e0e0 !important;
         padding: 24px !important;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
     }
