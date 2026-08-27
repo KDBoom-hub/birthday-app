@@ -33,7 +33,8 @@ st.markdown(
 st.set_page_config(
     page_title="Birthday Countdown !",
     page_icon="🎊" 
-)   layout="centered"
+    layout="centered"
+)
 
 # page header
 st.title("Birthday Countdown !")
