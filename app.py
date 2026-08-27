@@ -6,7 +6,11 @@ st.title("Birthday Countdown !")
 
 # asks for user input
 name = st.text_input("Enter your name:", "Friend")
-bday_date  = st.date_input("Select your birthday: ")
+bday_date  = st.date_input("
+    "Select your birthday: ",
+    min_value=datetime.date(2000, 1, 1),
+    max_value=datetime.today()
+)
 
 # run calc when button is clicked
 if st.button("Calculate Days Left"):
