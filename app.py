@@ -8,6 +8,7 @@ st.title("Birthday Countdown !")
 name = st.text_input("Enter your name:", "Friend")
 bday_date  = st.date_input(
     "Select your birthday: ",
+    value=datetime.date(2000, 1, 1),
     min_value=datetime.date(2000, 1, 1),
     max_value=datetime.date.today()
 )
