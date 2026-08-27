@@ -6,12 +6,12 @@ import streamlit as st
 st.markdown(
     """
     <style>
+    /* Gradient Background */
     .stApp {
         background: linear-gradient(135deg, #ffdde1 0%, #ee9ca7 100%) !important;
-        color: #4a4a4a;
     }
-   
-   /* Headings & Subtitles */
+
+    /* Headings & Subtitles */
     h1, h2, h3, p, label {
         color: #2c3e50 !important;
         font-weight: 600 !important;
@@ -19,20 +19,24 @@ st.markdown(
 
     /* Container with Solid White Background and Black Border */
     div[data-testid="stVerticalBlock"] > div[style*="border"] {
-        background-color: #111111 !important;
-        color: #2c3e50 !important;
+        background-color: #ffffff !important;
         border-radius: 20px !important;
-        border: 3px solid #e0e0e0 !important;
+        border: 3px solid #111111 !important;
         padding: 24px !important;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
     }
 
-    /* Input Fields */
+    /* Input Fields Styling - Matches Text and Date Inputs */
+    div[data-testid="stTextInput"] > div > div, 
+    div[data-testid="stDateInput"] > div > div {
+        background-color: #262730 !important;
+        border-radius: 8px !important;
+        border: none !important;
+    }
+
     .stTextInput input, .stDateInput input {
-        background-color: #111111 !important;
-        color: #2c3e50 !important;
-        border-radius: 10px !important;
-        border: 1px solid #e0e0e0 !important;
+        color: #ffffff !important;
+        background-color: transparent !important;
     }
 
     /* Action Button */
@@ -54,7 +58,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
 # set browser tap config
 st.set_page_config(
     page_title="Birthday Countdown !",
