@@ -55,7 +55,7 @@ bday_date  = st.date_input(
 )
 
 # run calc when button is clicked
-if st.button("Calculate Days Left 🍾", use_contatiner_width=True):
+if st.button("Calculate Days Left 🍾", use_container_width=True):
     today = datetime.date.today()
 
     next_bday = datetime.date(today.year, bday_date.month, bday_date.day)
