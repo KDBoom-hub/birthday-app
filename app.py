@@ -10,11 +10,49 @@ st.markdown(
         background: linear-gradient(135deg, #ffdde1 0%, #ee9ca7 100%) !important;
         color: #4a4a4a;
     }
+   
+   /* Headings & Subtitles */
+    h1, h2, h3, p, label {
+        color: #2c3e50 !important;
+        font-weight: 600 !important;
+    }
+
+    /* Container with Solid White Background and Black Border */
+    div[data-testid="stVerticalBlock"] > div[style*="border"] {
+        background-color: #ffffff !important;
+        border-radius: 20px !important;
+        border: 3px solid #111111 !important;
+        padding: 24px !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    /* Input Fields */
+    .stTextInput input, .stDateInput input {
+        background-color: #ffffff !important;
+        color: #2c3e50 !important;
+        border-radius: 10px !important;
+        border: 1px solid #e0e0e0 !important;
+    }
+
+    /* Action Button */
+    .stButton > button {
+        background: linear-gradient(135deg, #d63384 0%, #e83e8c 100%) !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-radius: 12px !important;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        padding: 12px !important;
+        transition: transform 0.2s ease !important;
+    }
+    
+    .stButton > button:hover {
+        transform: scale(1.02);
+    }
     </style>
     """,
     unsafe_allow_html=True
 )
-
 
 # set browser tap config
 st.set_page_config(
@@ -56,6 +94,7 @@ if st.button("Calculate Days Left 🍾", use_container_width=True):
         for _ in range(3):
             st.balloons()
             time.sleep(0.3)
+
         st.markdown(
             f"""
             <div style="
