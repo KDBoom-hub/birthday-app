@@ -60,7 +60,7 @@ st.markdown(
 )
 # 
 st.set_page_config(
-    page_title="Birthday Countdown !",
+    page_title="Birthday Countdown ! - Made by Animex",
     page_icon="🎊", 
   layout="centered"
 ) 
