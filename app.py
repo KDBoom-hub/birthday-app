@@ -31,7 +31,7 @@ st.markdown(
 
 # set browser tap config
 st.set_page_config(
-    page_title="Birthday Countdown !"
+    page_title="Birthday Countdown !",
     page_icon="🎊" 
 )   layout="centered"
 
