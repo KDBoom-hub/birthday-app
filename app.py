@@ -2,6 +2,13 @@ import datetime
 import time
 import streamlit as st
 
+# 
+st.set_page_config(
+    page_title="Birthday Countdown !",
+    page_icon="🎊", 
+  layout="centered"
+) 
+
 #
 st.markdown(
     """
@@ -58,15 +65,11 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-# 
-st.set_page_config(
-    page_title="Birthday Countdown ! - Made by Animex",
-    page_icon="🎊", 
-  layout="centered"
-) 
+
 
 # 
 st.title("Birthday Countdown !")
+st.caption("Made by Animex~")
 st.caption("Enter your birthdate below to see how many days until your birthday!~")
 st.divider()
 
