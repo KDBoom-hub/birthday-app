@@ -32,7 +32,7 @@ st.markdown(
 # set browser tap config
 st.set_page_config(
     page_title="Birthday Countdown !"
-    page_icon=⌛ 
+    page_icon=🎊 
 )   layout="centered"
 
 # page header
@@ -70,4 +70,3 @@ if st.button("Calculate Days Left 🍾", use_contatiner_width=True):
         st.success(f"Happy Birthday, {name}! Today is your special day! ❤️")
     else:
         st.info(f"Hiya, **{name}** there are **{days_left} days** until your birthday!")
-
